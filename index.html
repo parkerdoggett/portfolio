@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker Doggett | DevOps Engineer</title>
+    <meta name="description"
+        content="Portfolio of Parker Doggett, IT Programming Student and Aspiring DevOps Engineer.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"Fira Code"', 'monospace'],
+                    },
+                    colors: {
+                        'sys-dark': '#0f172a',
+                        'sys-green': '#22c55e',
+                        'sys-orange': '#f97316',
+                        'sys-gray': '#1e293b',
+                    },
+                    animation: {
+                        'blink': 'blink 1s step-end infinite',
+                    },
+                    keyframes: {
+                        blink: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-sys-dark text-slate-300 font-mono antialiased selection:bg-sys-green selection:text-sys-dark min-h-screen flex flex-col">
+
+    <header class="border-b border-slate-700 bg-slate-900/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white tracking-tight">
+                PD<span class="text-sys-green">_</span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm">
+                <a href="#about" class="hover:text-sys-green transition-colors">./about</a>
+                <a href="#interests" class="hover:text-sys-green transition-colors">./interests</a>
+                <a href="#projects" class="hover:text-sys-green transition-colors">./projects</a>
+                <a href="#experience" class="hover:text-sys-green transition-colors">./experience</a>
+                <a href="#volunteer" class="hover:text-sys-green transition-colors">./volunteer</a>
+                <a href="#contact" class="hover:text-sys-green transition-colors">./contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full space-y-24">
+
+        <section class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="space-y-2">
+                    <p class="text-sys-green text-sm">root@parker-doggett:~# whoami</p>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight">
+                        Parker Doggett<span class="text-sys-green animate-blink">_</span>
+                    </h1>
+                </div>
+                <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl">
+                    IT Programming Student @ NSCC Lunenburg <br>
+                    Aspiring <span class="text-white font-semibold">DevOps Engineer</span> & <span
+                        class="text-white font-semibold">Systems Administrator</span>
+                </p>
+                <div class="flex flex-wrap gap-3 text-sm">
+                    <span class="px-3 py-1 border border-slate-600 rounded bg-slate-800/50">📍 Bridgewater, NS</span>
+                </div>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#contact"
+                        class="inline-block px-8 py-3 bg-slate-100 text-sys-dark font-bold rounded hover:bg-white transition-colors">
+                        Contact Me
+                    </a>
+                    <a href="./resume.pdf" target="_blank"
+                        class="inline-block px-8 py-3 border border-slate-600 text-slate-300 font-bold rounded hover:bg-slate-800 hover:text-white transition-colors">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
+                <img src="./profile.png" alt="Parker Doggett"
+                    class="w-full h-full object-cover rounded-2xl shadow-2xl border border-slate-700">
+            </div>
+        </section>
+
+        <section id="about" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">About Me</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">cat profile.txt</span>
+            </div>
+            <div class="bg-slate-800/20 border border-slate-700 rounded p-6 space-y-4">
+                <p class="text-slate-400 leading-relaxed">
+                    My love and interest for technology began at a very young age, tinkering with every part of my
+                    family's technology. Today, my passion is driven by a desire to build and deploy reliable systems
+                    that work where it's needed the most. With a background in emergency services (both as a support
+                    staff in the ED and a volunteer firefighter), I understand the critical importance of uptime, speed
+                    and scalable mission critical applications and software.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 pt-2">
+                    <div>
+                        <h3 class="text-white font-bold mb-2 text-sm uppercase tracking-wider text-sys-green">Short Term
+                            Goals</h3>
+                        <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                            <li>Graduate NSCC IT Programming Diploma with Honors (April 2026).</li>
+                            <li>Begin Bachelor of Applied Computer Science at Dalhousie University (Fall 2026).</li>
+                            <li>Obtain an Associate-level Cloud Certification (AWS Certified SysOps or Azure
+                                Administrator).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold mb-2 text-sm uppercase tracking-wider text-sys-green">Long Term
+                            Goals</h3>
+                        <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                            <li>Secure a Senior DevOps Engineer role managing high-availability infrastructure.</li>
+                            <li>Architect redundant systems for emergency services or public sector clients.</li>
+                            <li>Manage or lead a team of DevOps Engineers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Education</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">ls /etc/education</span>
+            </div>
+            <div class="space-y-4">
+                <a href="https://www.nscc.ca" target="_blank"
+                    class="flex flex-col md:flex-row justify-between md:items-center border-l-2 border-sys-green pl-4 hover:bg-slate-800/20 transition-colors p-2 rounded-r group">
+                    <div class="flex items-center gap-4">
+                        <img src="./logo_1.png" alt="NSCC Logo" class="w-10 h-10 object-contain bg-white p-1 rounded">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-sys-green transition-colors">Nova
+                                Scotia Community College</h3>
+                            <p class="text-slate-400">IT Programming</p>
+                        </div>
+                    </div>
+                    <div class="text-right md:text-left">
+                        <span class="text-sm text-slate-500">Graduating April 2026</span>
+                    </div>
+                </a>
+                <a href="https://www.dal.ca" target="_blank"
+                    class="flex flex-col md:flex-row justify-between md:items-center border-l-2 border-slate-600 pl-4 hover:bg-slate-800/20 transition-colors p-2 rounded-r group">
+                    <div class="flex items-center gap-4">
+                        <img src="./logo_0.png" alt="Dalhousie Logo"
+                            class="w-10 h-10 object-contain bg-white p-1 rounded">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-sys-green transition-colors">
+                                Dalhousie University</h3>
+                            <p class="text-slate-400">Bachelor of Applied Computer Science</p>
+                        </div>
+                    </div>
+                    <div class="text-right md:text-left">
+                        <span class="text-sm text-slate-500">Starting Fall 2026</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="interests" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Technical Interests</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">cat ~/interests.txt</span>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Docker -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-docker-plain text-2xl text-blue-500 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Docker</span>
+                </div>
+                <!-- Linux -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i class="devicon-linux-plain text-2xl text-white group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Linux (Debian)</span>
+                </div>
+                <!-- Windows Server -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-windows8-original text-2xl text-blue-400 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Windows Server</span>
+                </div>
+                <!-- Proxmox -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-proxmox-plain text-2xl text-orange-500 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Proxmox</span>
+                </div>
+                <!-- Java -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i class="devicon-java-plain text-2xl text-red-500 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Java</span>
+                </div>
+                <!-- Lua -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i class="devicon-lua-plain text-2xl text-blue-300 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Lua</span>
+                </div>
+                <!-- JavaScript -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-javascript-plain text-2xl text-yellow-400 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">JavaScript</span>
+                </div>
+                <!-- Python -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-python-plain text-2xl text-yellow-300 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Python</span>
+                </div>
+                <!-- WireGuard -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <svg class="w-6 h-6 text-red-500 group-hover:scale-110 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                        </path>
+                    </svg>
+                    <span class="text-slate-300 group-hover:text-white">WireGuard</span>
+                </div>
+                <!-- Unifi/Ubiquiti -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <svg class="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                        </path>
+                    </svg>
+                    <span class="text-slate-300 group-hover:text-white">Unifi / Ubiquiti</span>
+                </div>
+                <!-- Network Infrastructure -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <svg class="w-6 h-6 text-sys-green group-hover:scale-110 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                        </path>
+                    </svg>
+                    <span class="text-slate-300 group-hover:text-white">Network Infra</span>
+                </div>
+                <!-- Cloudflare -->
+                <div
+                    class="flex items-center gap-3 px-4 py-3 border border-slate-700 bg-slate-800/30 rounded hover:border-sys-green hover:bg-slate-800/50 transition-all group">
+                    <i
+                        class="devicon-cloudflare-plain text-2xl text-orange-400 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-slate-300 group-hover:text-white">Cloudflare</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Projects</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">ls -la ~/projects</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                    class="border border-slate-700 bg-slate-800/20 p-6 rounded hover:bg-slate-800/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-2">AI Over the Airwaves</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Capstone project for IT Programming Diploma at NSCC. A platform that transcribes emergency pages
+                        for local fire departments in real-time, feeding them into an AI-powered platform for incident
+                        commanders.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">AI</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">Proxmox</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">Docker</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">NodeJS</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">React</span>
+                    </div>
+                </div>
+                <div
+                    class="border border-slate-700 bg-slate-800/20 p-6 rounded hover:bg-slate-800/40 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-2">Halifax Transit GTFS Realtime API</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Decoded GTFS realtime data broadcasted by Halifax Regional Municipality to create an API of bus
+                        locations and schedules.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">NodeJS</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">Java</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">C++</span>
+                        <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">GTFS/Protobuf</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Work Experience</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">history | grep work</span>
+            </div>
+
+            <div class="relative border-l border-slate-700 ml-3 space-y-10 pl-8 py-2">
+
+                <div class="relative">
+                    <span
+                        class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-sys-dark bg-sys-green"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                        <span
+                            class="text-xs font-bold px-2 py-1 bg-sys-green/20 text-sys-green rounded w-fit">CURRENT</span>
+                        <span class="text-sm text-slate-500">2025 - Present</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <img src="./logo_2.png" alt="NS Health Logo"
+                            class="w-8 h-8 object-contain bg-white p-0.5 rounded">
+                        <h3 class="text-xl font-bold text-white">Unit Aide</h3>
+                    </div>
+                    <a href="https://www.nshealth.ca" target="_blank"
+                        class="text-sys-green text-sm mb-2 hover:underline inline-flex items-center gap-1">
+                        Nova Scotia Health Authority
+                        <span class="text-xs">↗</span>
+                    </a>
+                    <ul class="list-disc list-inside text-slate-400 text-sm space-y-1 mt-1">
+                        <li>Worked in a fast-paced Emergency Room environment.</li>
+                        <li>Ensured the timely stocking of medical supplies.</li>
+                        <li>Assisted in patient care.</li>
+                    </ul>
+                </div>
+
+                <div class="relative">
+                    <span
+                        class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-sys-dark bg-sys-green"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                        <span
+                            class="text-xs font-bold px-2 py-1 bg-sys-green/20 text-sys-green rounded w-fit">CURRENT</span>
+                        <span class="text-sm text-slate-500">2021 - Present</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <img src="./logo_3.png" alt="LCLC Logo" class="w-8 h-8 object-contain bg-white p-0.5 rounded">
+                        <h3 class="text-xl font-bold text-white">Lifeguard / Aquatic Supervisor / Instructor</h3>
+                    </div>
+                    <a href="https://www.lclc.ca" target="_blank"
+                        class="text-sys-green text-sm mb-2 hover:underline inline-flex items-center gap-1">
+                        Lunenburg County Lifestyle Centre
+                        <span class="text-xs">↗</span>
+                    </a>
+                    <ul class="list-disc list-inside text-slate-400 text-sm space-y-1 mt-1">
+                        <li>Supervise aquatic center patrons.</li>
+                        <li>Provide quality instruction to students of all ages.</li>
+                        <li>Train new staff and supervise aquatic center operations.</li>
+                        <li>Record, add and manage pool chemicals.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="volunteer" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Volunteer Experience</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">history | grep volunteer</span>
+            </div>
+
+            <div class="relative border-l border-slate-700 ml-3 space-y-10 pl-8 py-2">
+
+                <div class="relative">
+                    <span
+                        class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-sys-dark bg-sys-green"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                        <span
+                            class="text-xs font-bold px-2 py-1 bg-sys-green/20 text-sys-green rounded w-fit">CURRENT</span>
+                        <span class="text-sm text-slate-500">2023 - Present</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <img src="./logo_fire.png" alt="Oakhill Fire Logo"
+                            class="w-8 h-8 object-contain bg-white p-0.5 rounded">
+                        <h3 class="text-xl font-bold text-white">Volunteer Firefighter & IT Coordinator</h3>
+                    </div>
+                    <a href="https://www.oakhillfire.ca" target="_blank"
+                        class="text-sys-green text-sm mb-2 hover:underline inline-flex items-center gap-1">
+                        Oakhill & District Fire Department
+                        <span class="text-xs">↗</span>
+                    </a>
+                    <ul class="list-disc list-inside text-slate-400 text-sm space-y-1 mt-1">
+                        <li>Serve community as a first responder in high-pressure situations.</li>
+                        <li>Perform first aid in accordance with provincial Medical First Responder standards.</li>
+                        <li>Configure, setup and design mission critical IT systems.</li>
+                        <li>Provide ongoing IT support to department.</li>
+                    </ul>
+                </div>
+
+                <div class="relative">
+                    <span
+                        class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-slate-600 bg-slate-800"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                        <span class="text-sm text-slate-500">2022 - 2023</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <img src="./logo_logoff.png" alt="Log Off Movement Logo"
+                            class="w-8 h-8 object-contain bg-white p-0.5 rounded">
+                        <h3 class="text-xl font-bold text-white">Director</h3>
+                    </div>
+                    <a href="https://logoffmovement.org" target="_blank"
+                        class="text-sys-green text-sm mb-2 hover:underline inline-flex items-center gap-1">
+                        Log Off Movement
+                        <span class="text-xs">↗</span>
+                    </a>
+                    <ul class="list-disc list-inside text-slate-400 text-sm space-y-1 mt-1">
+                        <li>Led initiatives to promote digital wellness and healthy tech habits.</li>
+                        <li>Managed technical operations such as server maintenance and software updates.</li>
+                        <li>Assisted in the development and implementation of new projects.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certifications" class="space-y-6">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Certifications</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">cat /etc/certs</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/20 border border-slate-700 rounded p-6">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-slate-700 pb-2">Lifesaving Society</h3>
+                    <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                        <li>National Lifeguard</li>
+                        <li>Intermediate Workplace First Aid (CPR C)</li>
+                        <li>Water Safety Instructor</li>
+                        <li>Lifesaving Instructor</li>
+                        <li>First Aid Instructor</li>
+                        <li>Lifesaving Sport Coach Level I</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-slate-800/20 border border-slate-700 rounded p-6">
+                        <h3 class="text-lg font-bold text-white mb-3 border-b border-slate-700 pb-2">St. John Ambulance
+                        </h3>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                            <li>Medical First Responder (Advanced)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800/20 border border-slate-700 rounded p-6">
+                        <h3 class="text-lg font-bold text-white mb-3 border-b border-slate-700 pb-2">Lunenburg Regional
+                            Fire Services Association</h3>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                            <li>Firefighter I</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800/20 border border-slate-700 rounded p-6">
+                        <h3 class="text-lg font-bold text-white mb-3 border-b border-slate-700 pb-2">Transport Canada
+                        </h3>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                            <li>Remotely Piloted Aircraft Pilot (Basic Operations)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="space-y-6 pb-12">
+            <div class="flex items-center gap-4 border-b border-slate-700 pb-2">
+                <h2 class="text-2xl font-bold text-white">Contact Me</h2>
+                <span class="text-xs px-2 py-0.5 bg-slate-800 rounded text-slate-400">./send_message.sh</span>
+            </div>
+
+            <div class="bg-slate-800/30 border border-slate-700 rounded p-6 md:p-10 text-center space-y-6">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:parker@doggett.one"
+                        class="flex items-center gap-2 px-5 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded transition-colors border border-slate-600">
+                        <span>📧</span> parker@doggett.one
+                    </a>
+                    <a href="https://github.com/parkerdoggett" target="_blank"
+                        class="flex items-center gap-2 px-5 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded transition-colors border border-slate-600">
+                        <span>🐙</span> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/parker-doggett-28418154/" target="_blank"
+                        class="flex items-center gap-2 px-5 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded transition-colors border border-slate-600">
+                        <span>💼</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        <p>
+            <span class="text-sys-green">root@parker-doggett</span>:~/portfolio echo "Built with Tailwind & Coffee"
+        </p>
+        <p class="mt-2">&copy; 2025 Parker Doggett.</p>
+    </footer>
+
+</body>
+
+</html>
